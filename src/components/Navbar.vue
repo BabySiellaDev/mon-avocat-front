@@ -1,0 +1,44 @@
+<template>
+  <nav class="navbar" role="navigation" aria-label="main navigation" style="margin-bottom:2.5%">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="profile">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a>
+      <a
+        role="button"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbar"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="acceuil">Acceuil</a>
+        <a class="navbar-item" href="apropos">A propos</a>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a href="login">
+              <button id="login" class="button is-primary">Se Connecter</button>
+            </a>
+            
+            <a href="register">
+              <button id="Register" class="button is-light">S'inscrire</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</template>
+<script>
+export default {
+  name: "Navbar"
+};
+</script>
