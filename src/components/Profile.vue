@@ -38,7 +38,7 @@
             <span></span>
           </div>
           <div class="container">
-            <button class="button is-primary is-large" onclick="modifier()">Modifier</button>
+            <button class="button is-primary is-large" v-on:click="modifier()">Modifier</button>
           </div>
         </div>
       </div>
@@ -48,6 +48,7 @@
 
 <script>
 export default {
-  name: "Profile"
+  name: "Profile",
+  methods: { modifier: function() {} }
 };
 </script>

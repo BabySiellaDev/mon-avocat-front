@@ -11,7 +11,9 @@
           >
         </div>
         <div class="column is-2 has-text-centered">
-          <button class="button is-primary" style="width:100%">Search!</button>
+          <router-link to="Users">
+            <button class="button is-primary" style="width:100%">Search!</button>
+          </router-link>
         </div>
       </div>
     </div>
@@ -30,9 +32,9 @@
           facilisis sodales sem.
         </div>
 
-        <a href="register" style="text-decoration: none;">
+        <router-link to="Register" style="text-decoration: none;">
           <button class="button is-primary is-large">S'inscrire Mainenant!</button>
-        </a>
+        </router-link>
       </article>
     </div>
   </div>

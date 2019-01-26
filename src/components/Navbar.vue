@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation" style="margin-bottom:2.5%">
     <div class="navbar-brand">
-      <a class="navbar-item" href="profile">
+      <router-link class="navbar-item" to="Acceuil">
         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-      </a>
+      </router-link>
       <a
         role="button"
         class="navbar-burger burger"
@@ -18,19 +18,19 @@
     </div>
     <div id="navbar" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item" href="acceuil">Acceuil</a>
-        <a class="navbar-item" href="apropos">A propos</a>
+        <router-link class="navbar-item" to="Acceuil">Acceuil</router-link>
+        <router-link class="navbar-item" to="apropos">apropos</router-link>
       </div>
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a href="login">
+            <router-link to="Login">
               <button id="login" class="button is-primary">Se Connecter</button>
-            </a>
-            
-            <a href="register">
+            </router-link>
+
+            <router-link to="Register">
               <button id="Register" class="button is-light">S'inscrire</button>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
